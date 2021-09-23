@@ -77,12 +77,12 @@ int maxSubArraySum(int a[], int size)
 int main()
 {
 	int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0; i<n; i++)
-        cin>>arr[i];
+        cin>>n;
+        int arr[n];
+        for(int i=0; i<n; i++)
+                cin>>arr[i];
 
-    int max_sum = maxSubArraySum(arr,n);
+        int max_sum = maxSubArraySum(arr,n);
 	cout << "Maximum contiguous sum is " << max_sum;
 	return 0;
 }
@@ -97,12 +97,12 @@ class Kadane
 {
 	public static void main (String[] args)
 	{
-        Scanner sc= new Scanner(System.in);
-        int n = sc.nextInt();
+                Scanner sc= new Scanner(System.in);
+                int n = sc.nextInt();
 		int [] a = new int[n];
-	    for(int i=0; i<n; i++){
-	        a[i]= sc.nextInt();
-	    }
+	        for(int i=0; i<n; i++) {
+	                a[i]= sc.nextInt();
+	        }
 		System.out.println("Maximum contiguous sum is " + maxSubArraySum(a));
 	}
 
@@ -145,11 +145,11 @@ int maxSubArraySum(int a[], int size)
 int main(void)
 {
 	int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0; i<n; i++)
+	scanf("%d",&n);
+	int arr[n];
+	for(int i=0; i<n; i++)
         scanf("%d",&arr[i]);
-    int max_sum = maxSubArraySum(arr,n);
+	int max_sum = maxSubArraySum(arr,n);
 	printf("Maximum contiguous sum is %d", max_sum);
 	return 0;
 }
